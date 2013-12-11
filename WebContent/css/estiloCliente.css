@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+body { background-color: #EFF5FB;}
+
+#tablaCliente{
+	/*estilo de el cuerpo de nuestra tabla*/
+	background-color: #1e8cbe;
+	width:80%;
+	margin:24px auto;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-family:helvetica,arial,sans-serif;
+	font-weight:normal;
+	text-transform: uppercase;
+}
+
+#tablaCliente th{
+	/*estilo de los elementos(th)*/
+	background-color: #7093DB ;
+	color:#fff;
+	font-weight: bold;
+	font-size:10px;
+	padding: 8px;
+}
+
+#tablaCliente td{
+	/*estilo a los elementos (td)*/
+	width:100px;
+	height: 24px;
+	font-size:10px;
+}
+
+#tablaCliente tr:nth-child(odd){
+	/*para los colores de las filas impares*/
+	background-color: #D9D9F3 ;
+}
+
+#tablaCliente tr:nth-child(even){
+	/*para los colores de las filas pares*/
+	background-color: #7093DB ;
+	color:#fff;
+}

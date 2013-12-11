@@ -1,0 +1,20 @@
+#contenedor {
+  width : 100%;
+  //height: 600px;
+  margin: 0px auto;
+  background-color: blue;
+}
+#cabecera {
+  //float: left;
+  width: 100%;
+  background-color: green;
+}
+#contenido {
+  float: left;
+  width: 100%;
+  background-color: red;
+}
+#pie {
+  clear: both;
+  background-color: fuchsia;
+}

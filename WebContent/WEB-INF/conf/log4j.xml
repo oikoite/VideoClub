@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+
+<!-- /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/drv/ -->
+<!-- logs/server1/drv/ -->
+
+<log4j:configuration debug="true">
+    <appender name="logvideoclub" class="org.apache.log4j.rolling.RollingFileAppender">
+        <rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+            <param name="FileNamePattern" value="/opt/logs/%d{yyyy-MM-dd}_videoclub.log.gz" />
+        </rollingPolicy>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d|%-5p|%m%n" />
+        </layout>
+    </appender>
+    <appender name="logvideoclub" class="org.apache.log4j.rolling.RollingFileAppender">
+        <rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+            <param name="FileNamePattern" value="/opt/logs/%d{yyyy-MM-dd}_videoclub.log.gz" />
+        </rollingPolicy>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d|%-5p|%m%n" />
+        </layout>
+    </appender>
+    <logger name="logvideoclub" additivity="false">
+        <priority value="info" />
+        <appender-ref ref="logvideoclub" />
+    </logger>
+    <logger name="logvideoclub" additivity="false">
+        <priority value="info" />
+        <appender-ref ref="logvideoclubtx" />
+    </logger>
+    <logger name="py.com.itau.util.genexus.GnxJarInvoker" additivity="false">
+        <priority value="info" />
+        <appender-ref ref="logvideoclub" />
+    </logger>
+</log4j:configuration>
